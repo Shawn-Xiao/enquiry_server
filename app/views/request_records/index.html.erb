@@ -1,0 +1,26 @@
+<h1>All request records</h1>
+
+<ul>
+  <% @request_records.each do |request_record| %>
+    <li>
+      请求类型：
+      <%= request_record.request_type %>
+      <br/>
+      用户位置:
+      <%= request_record.location %>
+      <br/>
+      车牌:
+      <%= request_record.brand %>
+      <br/>
+      车型:
+      <%= request_record.car_model %>
+      <br/>
+      电话:
+      <%= request_record.phone %>
+      <br/>
+      姓名:
+      <%= request_record.name %>
+      <br/>
+    </li>
+  <% end %>
+</ul>
