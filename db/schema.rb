@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_16_052024) do
+ActiveRecord::Schema.define(version: 2018_10_18_074629) do
 
   create_table "request_records", force: :cascade do |t|
     t.string "request_type"
     t.string "location"
     t.string "brand"
-    t.string "car_model"
+    t.string "model"
     t.string "phone"
     t.string "name"
     t.datetime "created_at", null: false
